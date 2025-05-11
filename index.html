@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFT</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        h1 { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>nft collection</h1>
+    <p>NeoCore-Cyberpunk</p>
+<html>
+<head>
+	<img src="NeoCore.png" alt="Digital Rebels" width="Auto">
+    <title>Neocore Digital Rebels</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #0066cc;
+        }
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 100;
+            text-align: center;
+        }
+        #lightbox img {
+            margin-top: 50px;
+            max-width: 90%;
+            max-height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Thumbnail 1 -->
+        <img src="neocore/NeoCore1.png" 
+             onclick="openLightbox('neocore/full1.png')">
+        
+        <!-- Thumbnail 2 -->
+        <img src="neocore/NeoCore2.png" 
+             onclick="openLightbox('neocore/full2.png')">
+    </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+    
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = imageSrc;
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+<html>
+<head>
+	<img src="Cyberpunk.png" alt="Cyberpunk Harvest" width="Auto">
+    <title>Cyberpunk Harvest</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #0066cc;
+        }
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 100;
+            text-align: center;
+        }
+        #lightbox img {
+            margin-top: 50px;
+            max-width: 90%;
+            max-height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Thumbnail 1 -->
+        <img src="cyberpunk/Cyberpunk1.png" 
+             onclick="openLightbox('images/full1.png')">
+        
+        <!-- Thumbnail 2 -->
+        <img src="cyberpunk/Cyberpunk2.png" 
+             onclick="openLightbox('images/full2.png')">
+    </div>
+    
+            <!-- Thumbnail 3 -->
+        <img src="cyberpunk/Cyberpunk3.png" 
+             onclick="openLightbox('images/full3.png')">
+    </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+    
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = imageSrc;
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
